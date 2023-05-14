@@ -1,0 +1,152 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html, body{
+  background-color: #111111;
+}
+header img {
+  height: 45px;
+  margin-left: 40px;
+}
+header {
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+header * {
+  display: inline;
+}
+header li {
+  margin: 20px;
+}
+.link{
+  color: black;
+  text-decoration: none;
+  text-transform: none;
+  font-family: 'Open Sans',sans-serif;
+  font-weight: 600;
+  color: gray;
+  font-size: 20px;
+  transition : color 0.4s ease-in-out;
+}
+.link:hover{
+  color: #ff6900;
+}
+.centered{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.CardColor{
+  background-color: #1f1f1f;
+  display: flex;
+  flex-direction: column;
+}
+.Cardtext{
+  color: white;
+}
+.botonColor{
+  background-color: red;
+}
+.pdfFormat{
+  background-color: #1f1f1f;
+}
+.naranja{
+background-color: #ff6900;
+}
+.testing{
+  background-color: #111111;
+}
+.chatbot{
+  width: 100vh;
+  height: 70vh;
+  background-color: #111111;
+}
+.centered2{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+.mainChat {
+  max-width: 90%;
+  background-color: #1f1f1f;
+  min-height: 85vh;
+  min-width: 150vh;
+  width: 100%;
+  border-radius: 20px;
+  padding: 4vh;
+  display: flex;
+  margin-top: 7vh;
+}
+.separador{
+  position: absolute;
+  bottom: 0;
+}
+.BotLetter{
+  color: white;
+  font-size: larger;
+  margin-left: 1vh;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.Ia{
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+}
+.User{
+  position: absolute;
+  bottom: 0;
+  min-width:100%;
+}
+.ChatContent{
+  color: white;
+  background-color: blue;
+  padding: 0;
+  margin: 0;
+}
+.ChatContent2{
+  color: white;
+  background-color: lightcoral;
+  padding: 0;
+  margin: 0;
+}
+
+
+.White{
+  color: white;
+}
+.tableConfig{
+  padding: 13vh;
+  background-color: #111111;
+}
+.Register{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.Grid{
+  align-items: center;
+}
+.Bloque{
+  background-color: white;
+  padding-bottom: 100%;
+}
+.centeredBot{
+  margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
+}
