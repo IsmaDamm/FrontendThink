@@ -52,7 +52,7 @@ export default function Form1() {
       const notify = toast.loading("Subiendo Documentos", {position: toast.POSITION.TOP_RIGHT})
       notify
       console.log(CookieFinal)
-      const response = await fetch("http://127.0.0.1:8000/api/subject/", {
+      const response = await fetch("http://daniieelgs.ddns.net:8000/api/subject/", {
         headers:{
           'Authorization': 'Bearer ' + CookieFinal,
         },

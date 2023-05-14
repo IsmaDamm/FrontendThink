@@ -51,7 +51,7 @@ export default function About() {
 
   async function getPdf2() {
     if(CookieFinal != undefined) { 
-    const response = await fetch("http://127.0.0.1:8000/api/subject/", {
+    const response = await fetch("http://daniieelgs.ddns.net:8000/api/subject/", {
       headers:{
         'Authorization': 'Bearer ' + CookieFinal,
       }
@@ -125,7 +125,7 @@ export default function About() {
         query = query.concat("&use_internet")
         console.log(query);
       }
-      const response = await fetch("http://127.0.0.1:8000/api/query/" +id+"?q=" + query, {
+      const response = await fetch("http://daniieelgs.ddns.net:8000/api/query/" +id+"?q=" + query, {
         headers:{
           'Authorization': 'Bearer ' + CookieFinal,
         }});

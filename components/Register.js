@@ -36,7 +36,7 @@ const Register = () => {
 
   const SendPdf = async() => {
     try {
-      const response = await fetch("http://127.0.0.1:8000/api/user/register/", {
+      const response = await fetch("http://daniieelgs.ddns.net:8000/api/user/register/", {
         method: "POST",
         body: JSON.stringify({name: username, backname: lastname, mail: email2, password: password})
       });

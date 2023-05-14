@@ -17,7 +17,7 @@ export default function InfoPdf(props) {
 
     
     async function getPdf() {
-        const response = await fetch("http://127.0.0.1:8000/api/file/" + props.id)
+        const response = await fetch("http://daniieelgs.ddns.net:8000/api/file/" + props.id)
         const data = await response.json()
         console.log(data.result);
         setTabla(data.result);
@@ -40,7 +40,7 @@ export default function InfoPdf(props) {
         Email: 
         <Card.Link href="#"> {tabla.email}</Card.Link>
         <br/>
-        URL : <Card.Link href={"http://127.0.0.1:8000" + tabla.url}>Pdf</Card.Link>
+        URL : <Card.Link href={"http://daniieelgs.ddns.net:8000" + tabla.url}>Pdf</Card.Link>
       </Card.Body>
     </Card>
     </div>

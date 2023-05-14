@@ -24,7 +24,7 @@ export default function TableContent(props) {
   }, [CookieFinal]);
 
     async function deletePdf() {
-        const response = await fetch("http://127.0.0.1:8000/api/file/" + props.id, {
+        const response = await fetch("http://daniieelgs.ddns.net:8000/api/file/" + props.id, {
           headers:{
             'Authorization': 'Bearer ' + CookieFinal,
           },
@@ -41,14 +41,14 @@ export default function TableContent(props) {
 
   return (
         <Card style={{ width: '9rem'}}>
-          <a href={`http://127.0.0.1:8000/${props.link}`} target='blanket'>
+          <a href={`http://daniieelgs.ddns.net:8000/${props.link}`} target='blanket'>
           <Card.Img variant="top" src="/PdfImage.png" />
           </a>
           <Card.Body style={{backgroundcolor: props.color}}>
             <Card.Title className='mb-2 p-0 ' style={{fontSize: '12px'}}>{props.name}</Card.Title>
             <Button variant='danger' className='me-1' size='sm'><MdDelete size={16} onClick={deletePdf} /></Button> 
            <Button className='me-1' size='sm'><MdEdit size={16} /></Button> 
-           <a href={`http://127.0.0.1:8000/${props.link}`} target='blanket'><Button variant = "success" size='sm'><MdInfo size={16}/></Button></a>
+           <a href={`http://daniieelgs.ddns.net:8000/${props.link}`} target='blanket'><Button variant = "success" size='sm'><MdInfo size={16}/></Button></a>
           </Card.Body>
         </Card>
 
@@ -59,7 +59,7 @@ export default function TableContent(props) {
 //     <tr id="remove">
 //         <td>{props.name}</td>
 //         <td style={{backgroundColor: props.color}}>{props.email}</td>
-//         <td><a href={"http://127.0.0.1:8000" + props.link} target="_blank">{props.link}</a></td>
+//         <td><a href={"http://daniieelgs.ddns.net:8000" + props.link} target="_blank">{props.link}</a></td>
 //         <td className='text-center'>
 //           <Button variant='danger' className='me-1'><MdDelete size={23} onClick={deletePdf} /></Button> 
 //           <Button className='me-1'><MdEdit size={23} /></Button> 

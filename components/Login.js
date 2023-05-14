@@ -32,7 +32,7 @@ const Login = () => {
 
   const DoLogin = async() => {
     try {
-      const response = await fetch("http://127.0.0.1:8000/api/user/login/", {
+      const response = await fetch("http://daniieelgs.ddns.net:8000/api/user/login/", {
         method: "POST",
         body: JSON.stringify({mail: email2, password: password})
       });

@@ -47,7 +47,7 @@ export default function Carta() {
   async function getPdf() {
     if(CookieFinal != undefined) {
     console.log(CookieFinal);
-    const response = await fetch("http://127.0.0.1:8000/api/subject/", {
+    const response = await fetch("http://daniieelgs.ddns.net:8000/api/subject/", {
       headers:{
         'Authorization': 'Bearer ' + CookieFinal,
       }
@@ -114,7 +114,7 @@ export default function Carta() {
       console.log(fileUploaded[i].name)
       form.append("pdf_file", fileUploaded[i])
       form.append("name", fileUploaded[i].name)
-      const response = await fetch("http://127.0.0.1:8000/api/file/" + ID, {
+      const response = await fetch("http://daniieelgs.ddns.net:8000/api/file/" + ID, {
         headers:{
           'Authorization': 'Bearer ' + CookieFinal,
         },
