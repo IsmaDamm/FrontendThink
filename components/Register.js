@@ -5,6 +5,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Layout from "../components/layout";
 import Cookies from 'universal-cookie';
+import { useRouter } from 'next/navigation';
 
 const Register = () => {
   const [username, setUsername] = useState('');
@@ -13,6 +14,7 @@ const Register = () => {
   const [password2, setPassword2] = useState('');
   const [email2, setemail] = useState('');
   const [cookie, setCookie] = useState('');
+  const { push } = useRouter();
 
   const handleUsernameChange = (event) => {
     setUsername(event.target.value);
@@ -68,6 +70,7 @@ const Register = () => {
         const cookies = new Cookies();
         cookies.set('loginCookie', cookieFinal, { path: '/' , expires: new Date(Date.now()+9048000)});
         console.log(cookies.get('loginCookie')); 
+        push("/")
       }
     }
     else{

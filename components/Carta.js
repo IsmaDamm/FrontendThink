@@ -163,7 +163,7 @@ export default function Carta() {
               </Dropdown>
             </Col>
             <Col>
-            <Button size="lg" variant="primary" className='mt-0' style={{backgroundColor: "#342b6a", borderStyle: "none", fontSize: "large"}} onClick={handleClick}>
+            <Button size="lg" variant="primary" className='mt-0' style={{backgroundColor: "#342b6a", borderStyle: "none", fontSize: "large"}} onClick={handleClick} disabled = {disableButton}>
               ADD
             </Button>
             

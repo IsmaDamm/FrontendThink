@@ -5,11 +5,13 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Cookies from 'universal-cookie';
 import Layout from "../components/layout";
+import { useRouter } from 'next/navigation';
 
 const Login = () => {
   const [email2, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [cookie, setCookie] = useState('');
+  const { push } = useRouter();
 
   const handleUsernameChange = (event) => {
     setEmail(event.target.value);
@@ -26,6 +28,7 @@ const Login = () => {
     if (cookieFinal != undefined) {
       const cookies = new Cookies();
       cookies.set('loginCookie', cookieFinal, { path: '/' , expires: new Date(Date.now()+9048000)});
+      push('/');
       console.log(cookies.get('loginCookie')); 
     }
   };
